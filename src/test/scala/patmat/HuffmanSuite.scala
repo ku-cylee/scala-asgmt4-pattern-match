@@ -1,14 +1,14 @@
 package patmat
 
-import org.scalatest.FunSuite
+import org.scalatest.funsuite.AnyFunSuite
 
 import org.junit.runner.RunWith
-import org.scalatest.junit.JUnitRunner
+import org.scalatestplus.junit.JUnitRunner
 
 import patmat.Huffman._
 
 @RunWith(classOf[JUnitRunner])
-class HuffmanSuite extends FunSuite {
+class HuffmanSuite extends AnyFunSuite {
   trait TestTrees {
     val t1 = Fork(Leaf('a',2), Leaf('b',3), List('a','b'), 5)
     val t2 = Fork(Fork(Leaf('a',2), Leaf('b',3), List('a','b'), 5), Leaf('d',4), List('a','b','d'), 9)
